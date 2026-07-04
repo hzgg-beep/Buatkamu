@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 Buat Kamu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f9f3f0;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            padding: 20px;
+        }
+
+        .card {
+            max-width: 550px;
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 24px 24px 24px 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.04), 0 8px 16px rgba(0,0,0,0.02);
+            border: 1px solid #f0e6e2;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .card::after {
+            content: "✧";
+            position: absolute;
+            bottom: -12px;
+            right: 30px;
+            font-size: 28px;
+            color: #d4b8ae;
+            opacity: 0.4;
+        }
+
+        .ornamen {
+            text-align: center;
+            font-size: 18px;
+            color: #d9c2b8;
+            letter-spacing: 6px;
+            margin-bottom: 6px;
+        }
+
+        .judul {
+            font-size: 26px;
+            font-weight: 400;
+            text-align: center;
+            color: #3a2c28;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .subjudul {
+            text-align: center;
+            font-size: 14px;
+            color: #b39b91;
+            font-style: italic;
+            margin-bottom: 28px;
+            letter-spacing: 0.3px;
+        }
+
+        .isi {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #3f3531;
+            text-align: justify;
+            padding: 0 4px;
+        }
+
+        .isi p {
+            margin-bottom: 16px;
+        }
+
+        .highlight {
+            color: #ac7b6b;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .tanda-tangan {
+            margin-top: 32px;
+            text-align: right;
+            font-style: italic;
+            color: #7a635b;
+            border-top: 1px solid #efe5e1;
+            padding-top: 24px;
+            font-size: 16px;
+        }
+
+        .tanda-tangan span {
+            display: block;
+            font-size: 14px;
+            color: #b39b91;
+            margin-top: 4px;
+            font-style: normal;
+        }
+
+        .tombol-kirim {
+            display: none; /* sembunyiin, biar fokus ke suratnya */
+        }
+
+        /* efek hover halus */
+        .card:hover {
+            box-shadow: 0 24px 48px rgba(0,0,0,0.06);
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 28px 18px;
+            }
+            .judul {
+                font-size: 22px;
+            }
+            .isi {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="ornamen">♡ ✿ ♡</div>
+    <div class="judul">Untuk Kamu</div>
+    <div class="subjudul">— yang selalu ada di pikiranku —</div>
+
+    <div class="isi">
+        <p>Aku menulis ini bukan karena aku pintar merangkai kata, tapi karena aku sadar ada yang perlu aku perbaiki.</p>
+
+        <p>Maafin aku ya, kalau selama ini sikapku yang terlalu <span class="highlight">ramah dan terbuka</span> ke semua orang bikin kamu merasa gak nyaman, atau bahkan merasa <span class="highlight">kurang dihargai</span>. Itu bukan maksudku sama sekali.</p>
+
+        <p>Aku tipe orang yang gak tega ngeliat orang lain sedih, dan aku suka ngobrol. Tapi aku baru sadar, tanpa sadar itu bisa bikin orang yang paling aku sayang—kamu—merasa <span class="highlight">gak istimewa</span>. Padahal, gak ada satu pun dari mereka yang sebanding sama kamu.</p>
+
+        <p>Aku gak minta kamu langsung percaya. Tapi aku minta <span class="highlight">kesempatan</span> buat nunjukkin kalau aku serius. Mulai sekarang, aku bakal lebih jaga batas, lebih perhatian ke kamu, dan belajar buat bikin kamu ngerasa aman.</p>
+
+        <p>Karena buat aku, kamu bukan cuma salah satu dari banyak orang. Kamu adalah <span class="highlight">prioritas</span>.</p>
+    </div>
+
+    <div class="tanda-tangan">
+        Dari aku yang lagi belajar jadi lebih baik,
+        <span>— dengan segala kekurangan, tapi tulus.</span>
+    </div>
+</div>
+
+</body>
+</html>
